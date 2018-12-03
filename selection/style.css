@@ -1,0 +1,16 @@
+
+
+
+@charset "utf-8";
+/* CSS Document */
+
+
+/*-----Balloon----*/
+.balloon { width:100%; overflow-x:hidden; background-color:#000; }
+.balloon .drop { display: block; z-index:0; position: absolute; background-repeat: no-repeat; min-width:2px; min-height:2px;
+border-radius: 180px;
+-moz-border-radius: 180px;
+-webkit-border-radius: 180px;
+border:solid 1px #fff;
+}
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Holster</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" type="text/css" rel="stylesheet" />
+
+
+
+
+
+<style>
+
+/* unvisited link */
+a:link {
+     text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+ text-decoration: none;
+}
+
+
+a1{
+    color: white;
+}
+
+a2 {
+    color: black;
+}
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial;
+   
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    background-color: #fff;
+     color: white;
+}
+
+.right {
+    right: 0;
+
+     color: black;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+.button {
+    background-color: #fff; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: #000;    border: none;
+    
+}
+
+.button1:hover {
+    background-color: #FF0000;
+    color: white;   border: none;
+}
+
+.button2 {
+    background-color: #000; 
+    color: #FFF;    border: none;
+   
+}
+
+.button2:hover {
+    background-color: #FF0000;
+    color: #FFF;   border: none;
+}
+/* Responsive  */
+.water-text,.centered h1{
+        font-size:40px
+    }
+@media only screen and (max-width: 475px) {
+   .water-text,.centered h1{
+        font-size:25px
+    }
+    .button {
+	padding: 5px 15px;
+    }
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+    <h1 style="color:#000;">PYTHON<br><span style="color:green">VEGAN</span></h1>
+ <button class="button button2"> <a href = "../python/python.htm" style="color:white">SHOP NOW</a></button>
+  </div>
+</div>
+
+
+
+
+
+<div class="split right">
+  <div class="centered">
+  
+<!-- jQuery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<!-- Rain & Snow Js -->
+<script type="text/javascript" src="js/rainsnow.js"></script>
+
+<script>
+// Call Ballon function
+$(document).ready(function() {
+	$('body').RainSnow({
+		effect_name: 'balloon',
+		drop_appear_speed: 100,
+		drop_falling_speed: 5000,
+		wind_direction: 3,
+		drop_rotate_angle : '-10deg',
+		drop_count_width_height:[[2,2], [4,4], [6,6], [8,8], [10,10]],
+		drop_left_to_right : false,
+		balloon_effect : true
+	});
+});
+// Other
+$('.content').css({'min-height':$(window).height()});
+</script>
+    <h1 style="color:#FFF;" class="water-text">WATER <br> RESISTANT </h1>
+ <button class="button button1"> <a href = "../water/water.htm" style="color:black">SHOP NOW</a></button>
+  </div>
+</div>
+     
+</body>
+</html> 

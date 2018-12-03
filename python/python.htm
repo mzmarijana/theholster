@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+<style>
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+p.ex1 {
+    margin-left: 50px;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+  padding: 5px 16px;
+  background: #000;
+  color: #FFF;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+.glow {
+ 
+  color: #fff;
+
+  -webkit-animation: glow 3s ease-in-out infinite alternate;
+  -moz-animation: glow 3s ease-in-out infinite alternate;
+  animation: glow 3s ease-in-out infinite alternate;
+
+}
+
+@-webkit-keyframes glow {
+  from {
+     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #d3d3d3, 0 0 40px #d3d3d3, 0 0 50px #d3d3d3, 0 0 60px #d3d3d3, 0 0 70px #d3d3d3, 0 0 80px #d3d3d3;
+  }
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("python.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+
+
+.button {
+    background-color: #fff; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: #000;    border: none;
+    
+}
+
+.button1:hover {
+    background-color: #FF0000;
+    color: white;   border: none;
+}
+
+.button2 {
+    background-color: #000; 
+    color: #FFF;    border: none;
+   
+}
+
+.button2:hover {
+    background-color: #FF0000;
+    color: #FFF;   border: none;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+.dota {
+    height: 25px;
+    width: 25px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dotb {
+    height: 25px;
+    width: 25px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dotc {
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+    
+    .color-items{
+        height: 700px;
+    }    
+    
+/* Responsive  */
+.content {
+	margin-bottom: 20px;
+}
+@media only screen and (max-width: 1080px) {
+.content {
+	padding: 0px;
+}
+}
+@media only screen and (max-width: 1048px) {
+.content {
+	margin-bottom: 80px;
+}
+}
+@media only screen and (max-width: 848px) {
+.content {
+	margin-bottom: 120px;
+}
+}
+@media only screen and (max-width: 730px) {
+.content {
+	margin-bottom: 140px;
+}
+}
+@media only screen and (max-width: 710px) {
+.content {
+	margin-bottom: 185px;
+}
+}
+@media only screen and (max-width: 691px) {
+.content {
+	margin-bottom: 200px;
+}
+}
+@media only screen and (max-width: 634px) {
+.content {
+	margin-bottom: 260px;
+}
+}
+@media only screen and (max-width: 600px) {
+.content {
+	margin-bottom: 0px;
+}
+}
+@media only screen and (max-width: 523px) {
+.content {
+	margin-bottom: 40px;
+}
+}
+@media only screen and (max-width: 467px) {
+.content {
+	margin-bottom: 70px;
+}
+}
+@media only screen and (max-width: 500px) {
+.color-items{
+        height: 1750px;
+    }
+}
+@media only screen and (max-width: 470px) {
+.color-items{
+        height: 1700px;
+    }
+}
+@media only screen and (max-width: 450px) {
+.color-items{
+        height: 1640px;
+    }
+}
+@media only screen and (max-width: 430px) {
+.color-items{
+        height: 1580px;
+    }
+}
+@media only screen and (max-width: 423px) {
+.content {
+	margin-bottom: 120px;
+}
+}
+@media only screen and (max-width: 420px) {
+.color-items{
+        height: 1500px;
+    }
+}
+@media only screen and (max-width: 400px) {
+.color-items{
+        height: 1420px;
+    }
+}
+@media only screen and (max-width: 396px) {
+.content {
+	margin-bottom: 150px;
+}
+}
+@media only screen and (max-width: 380px) {
+.color-items{
+        height: 1360px;
+    }
+}
+@media only screen and (max-width: 354px) {
+.content {
+	margin-bottom: 200px;
+}
+}
+@media only screen and (max-width: 360px) {
+.color-items{
+        height: 1290px;
+    }
+}
+@media only screen and (max-width: 340px) {
+.color-items{
+        height: 1200px;
+    }
+}
+@media only screen and (max-width: 320px) {
+.color-items{
+        height: 1160px;
+    }
+.content {
+	margin-bottom: 240px;
+}
+}
+
+
+</style>
+</head>
+<body class="w3-content" style="max-width:1300px">
+
+<div class="top-container">
+<div class="parallax"></div>
+</div>
+
+
+<div class="header" id="myHeader">
+  <p style="color:#fff"><a href = "../home/index.htm">THE HOLSTER </a>&nbsp; | &nbsp; <a href = "../water/water.htm">WATER RESISTANT </a>&nbsp; | &nbsp; <span class="glow"> PYTHON &nbsp; </span> </p>
+</div>
+<br><br>
+<div class="content">
+
+
+<div class="w3-row">
+  <div class="w3-half   w3-container w3-center color-items">
+ 
+   
+<img src="image.png" alt="Snow" style="width:100%">
+<div class="row">
+  <div class="column">
+    <img src="image2.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="image3.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="image4.png" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="w3-half w3-white w3-container" style="height:700px">
+    
+	  <p class="ex1">THE HOLSTER <br>
+	 <p class="ex1" style="font-size: 35px"><b>PYTHON</b></h1>
+	 <p class="ex1">PRICE: <b>$150.00 </b>
+	 <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+	  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>
+	  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	  <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	  
+	  <br><br>
+	  <div  class="ex1">
+  <p class="ex1">Available Colors <br><br>
+  <span class="dot"></span>&nbsp;&nbsp;&nbsp;
+  <span class="dota"></span>&nbsp;&nbsp;&nbsp;
+  <span class="dotb"></span>&nbsp;&nbsp;&nbsp;
+  <span class="dotc"></span>
+
+<br><br>
+<button class="button button2">ADD TO CART</button></p> </div>
+    
+      <div class="w3-left-align w3-padding-large">
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-16">
+ <center> <p>Powered by <a href="" target="_blank">OWA</a></p></center>
+</footer>
+
+ 
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
